@@ -1,0 +1,7 @@
+jurisdiction,regulated_zone,vehicle_technology,toll_fee_per_entry_usd,estimated_annual_fleet_entries,notes
+HUB_NORTH_ALLENTOWN_CORE,Municipal Clean Air Core & Low-Emission Zone (LEZ),DIESEL_CONVENTIONAL_AND_HYBRID,35.0,450,Mandatory urban access fee applied to all diesel combustion commercial vehicles entering municipal zone
+HUB_NORTH_ALLENTOWN_CORE,Municipal Clean Air Core & Low-Emission Zone (LEZ),BEV_DEPOT,0.0,450,100% Zero-Emission Exemption
+HUB_NORTH_ALLENTOWN_CORE,Municipal Clean Air Core & Low-Emission Zone (LEZ),BIO_CNG,0.0,450,Clean Alternative Fuel Exemption under Title 35 Regulation
+HUB_NORTH_ALLENTOWN_CORE,Municipal Clean Air Core & Low-Emission Zone (LEZ),H2_FCEV,0.0,450,100% Zero-Emission Exemption
+HUB_CENTRAL_GREENSBORO,Piedmont Triad Air Quality District,ALL_POWERTRAINS,0.0,0,No municipal clean air zone toll assessed
+HUB_SOUTH_JACKSONVILLE,First Coast Logistics Clean Corridor,ALL_POWERTRAINS,0.0,0,No municipal clean air zone toll assessed
