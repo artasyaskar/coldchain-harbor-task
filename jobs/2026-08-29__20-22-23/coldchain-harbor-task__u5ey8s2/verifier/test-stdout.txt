@@ -1,0 +1,17 @@
+Running Automated Verifier Suite...
+  [FAIL] test_output_files_exist                       (0/5 pts) -> Missing required output file: executive_recommendation.md
+  [FAIL] test_csv_schema_and_row_count                 (0/5 pts) -> lifecycle_cost_analysis.csv missing
+  [FAIL] test_json_schema_validity                     (0/5 pts) -> operational_risk_matrix.json missing
+  [FAIL] test_md_required_headings                     (0/5 pts) -> executive_recommendation.md missing
+  [FAIL] test_md_selected_powertrain_architecture      (0/15 pts) -> executive_recommendation.md missing
+  [FAIL] test_csv_rank_1_is_diesel_hybrid              (0/15 pts) -> lifecycle_cost_analysis.csv missing
+  [FAIL] test_json_recommended_strategy                (0/10 pts) -> operational_risk_matrix.json missing
+  [FAIL] test_tcol_numeric_reconciliation              (0/10 pts) -> lifecycle_cost_analysis.csv missing
+  [FAIL] test_pallet_mile_metric_validity              (0/10 pts) -> lifecycle_cost_analysis.csv missing
+  [FAIL] test_bev_grid_substation_finding              (0/10 pts) -> lifecycle_cost_analysis.csv missing
+  [FAIL] test_sla_pharma_delay_penalty_finding         (0/10 pts) -> lifecycle_cost_analysis.csv missing
+  [CLEAN] test_penalty_unauthorized_strategy_tokens     (0 penalty pts)
+  [CLEAN] test_penalty_substation_upgrade_omitted_for_bev (0 penalty pts)
+
+Final Reward: 0.0000 (0/100 points)
+Verifier results written to /logs/verifier/reward.json and /logs/verifier/ctrf.json

@@ -1,0 +1,5 @@
+Executing Reference Solution Pipeline...
+Generated /workspace/output/lifecycle_cost_analysis.csv
+Generated /workspace/output/operational_risk_matrix.json
+Generated /workspace/output/executive_recommendation.md
+Reference Solution Pipeline Completed Successfully.

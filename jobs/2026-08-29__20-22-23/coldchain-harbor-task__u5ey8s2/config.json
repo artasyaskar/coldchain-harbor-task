@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "/workspaces/coldchain-harbor-task"
+    },
+    "trial_name": "coldchain-harbor-task__u5ey8s2",
+    "trials_dir": "jobs/2026-08-29__20-22-23",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "0d13b0ce-d721-4aa1-8011-2022e18d59fc"
+}
