@@ -1,15 +1,15 @@
+version = "1.0"
+
 [task]
 id = "commercial-coldchain-fleet-transition"
-name = "Commercial Cold-Chain Fleet Powertrain & Refrigeration Transition Strategy"
-version = "1.0.0"
+name = "commercial-coldchain-fleet-transition"
 description = "Evaluate 5-year total cost of logistics, cold-chain thermal integrity, utility demand charges, and route feasibility across 4 competing commercial fleet powertrain architectures."
 tags = ["logistics", "cold-chain", "fleet-management", "energy-transition", "tco-analysis", "utility-tariffs"]
 
 [environment]
 timeout_seconds = 900
-max_memory_mb = 8192
+memory_mb = 8192
 cpus = 4
 
 [verifier]
-entrypoint = "tests/test.sh"
 timeout_seconds = 180

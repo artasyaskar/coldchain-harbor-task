@@ -2,7 +2,7 @@
 
 ## 1. Professional Role & Decision Context
 
-You are the **Lead Fleet Logistics Data Analyst and Asset Strategy Advisor** reporting directly to the Senior Vice President of Supply Chain Logistics & Fleet Assets at **Vanguard ColdChain Logistics (VCCL)**.
+You are the Lead Fleet Logistics Data Analyst and Asset Strategy Advisor to the Senior Vice President of Supply Chain Logistics & Fleet Assets at Vanguard ColdChain Logistics (VCCL).
 
 VCCL operates a specialized multi-regional refrigerated fleet transporting high-value pharmaceuticals, including biologics, vaccines, and active pharmaceutical ingredients under Good Distribution Practice (GDP) protocols, as well as perishable food products.
 
@@ -34,17 +34,11 @@ Your evaluation must strictly analyze the following four standardized candidate 
 The following operational, technical, financial, and regulatory datasets are provided in the `environment/` directory:
 
 1. `fleet_route_telematics_2025.csv`: Full-year sampled operational route dispatches across all three hubs, recording route class, distance, stop count, door-opening durations, transit hours, cargo classification (`PHARMA_GDP` vs `PERISHABLE_FOOD`), pallet payload, and dispatch completion status.
-
 2. `refrigeration_thermal_logs.json`: Telemetry recordings of ambient temperature, target box temperatures, steady-state thermal loads, infiltration heat flux, and compressor power draw across all 12 calendar months and facilities.
-
 3. `hub_utility_and_facility_tariffs.xlsx`: Electric utility rate schedules across three sheets: Time-of-Use (TOU) energy rates, 15-minute coincident peak demand charge tariffs with 85% rolling ratchet rules and facility transformer capacity limits, and utility substation upgrade capital cost schedules.
-
 4. `powertrain_procurement_contracts.pdf`: Master RFP procurement agreements detailing vehicle purchase pricing (MSRP), government incentive/voucher structures, guaranteed Year-5 residual buyback rates, scheduled preventive maintenance (PM) rates, component overhaul schedules, and delivery delay/temperature-excursion SLA penalty terms.
-
 5. `fuel_and_energy_index_pricing.csv`: Historical and projected delivered fuel commodity prices, regional pipeline transportation surcharges, and vehicle tractive fuel economy benchmarks.
-
 6. `depot_infrastructure_quotes.json`: Capital expenditure (CapEx) and annual maintenance/lease quotes for private hub fueling and charging infrastructure across all four powertrain architectures.
-
 7. `municipal_clean_air_regulations.csv`: Municipal clean-air zone entry toll rates, vehicle technology exemptions, and annual regulated urban delivery frequencies.
 
 ---
@@ -101,7 +95,7 @@ It must match the following JSON schema:
 {
   "fleet_size_total": 90,
   "planning_horizon_years": 5,
-  "recommended_strategy": "<WINNING_STRATEGY_TOKEN>",
+  "recommended_strategy": "",
   "hub_feasibility": {
     "HUB_NORTH": {
       "strategy_feasible": true,
@@ -138,45 +132,21 @@ The placeholder values in `recommended_strategy` and `candidate_tcol_summary` mu
 ## 5. Explicit Analytical Constraints & Rules
 
 ### 1. Planning Horizon & Discounting
-
-The evaluation covers 5 operational years (60 months).
-
-All recurring annual operating expenses, including fuel, energy, maintenance, utility demand charges, facility leases, regulatory tolls, and SLA penalties, as well as Year-5 residual buyback values, must be discounted using the corporate discount rate of **6.0% per annum** specified in the master contract.
+The evaluation covers 5 operational years (60 months). All recurring annual operating expenses, including fuel, energy, maintenance, utility demand charges, facility leases, regulatory tolls, and SLA penalties, as well as Year-5 residual buyback values, must be discounted using the corporate discount rate of **6.0% per annum** specified in the master contract.
 
 ### 2. Single Unified Strategy
-
-VCCL requires a single standardized powertrain architecture across all 90 tractors and 120 trailers.
-
-Multi-powertrain hybrid splitting across hubs is not supported.
-
-The final recommendation must therefore select exactly one of:
-
-`BEV_DEPOT`, `BIO_CNG`, `DIESEL_HYB_TRU`, or `H2_FCEV`.
+VCCL requires a single standardized powertrain architecture across all 90 tractors and 120 trailers. Multi-powertrain hybrid splitting across hubs is not supported. The final recommendation must therefore select exactly one of: `BEV_DEPOT`, `BIO_CNG`, `DIESEL_HYB_TRU`, or `H2_FCEV`.
 
 ### 3. Data Integrity & Reconciliation
-
-The operational data contains real-world enterprise reporting variations, such as legacy facility naming aliases, mixed temperature scales, mixed power units, and test dispatches.
-
-You must systematically reconcile these data streams before calculating the final lifecycle economics.
-
-Do not assume that raw record counts, aliases, units, or test dispatches can be used without validation.
+The operational data contains real-world enterprise reporting variations, such as legacy facility naming aliases, mixed temperature scales, mixed power units, and test dispatches. You must systematically reconcile these data streams before calculating the final lifecycle economics. Do not assume that raw record counts, aliases, units, or test dispatches can be used without validation.
 
 ### 4. Source Data Must Drive the Analysis
-
-All financial, operational, energy, refrigeration, regulatory, and infrastructure results must be derived from the datasets provided in the `environment/` directory.
-
-Do not use precomputed winner tables, hidden ground-truth values, rubric files, or hard-coded final answers as analytical inputs.
-
-The model should independently load and reconcile the source data, perform the required calculations, and determine the final ranking.
+All financial, operational, energy, refrigeration, regulatory, and infrastructure results must be derived from the datasets provided in the `environment/` directory. Do not use precomputed winner tables, hidden ground-truth values, rubric files, or hard-coded final answers as analytical inputs. The model should independently load and reconcile the source data, perform the required calculations, and determine the final ranking.
 
 ### 5. All Deliverables Must Be Written to `output/`
-
-Evaluation is performed strictly on the deliverable files written to the `output/` directory.
-
-Text printed to the console is not graded.
+Evaluation is performed strictly on the deliverable files written to the `output/` directory. Text printed to the console is not graded.
 
 The final `output/` directory must contain exactly these three deliverables:
-
 ```text
 output/executive_recommendation.md
 output/lifecycle_cost_analysis.csv
