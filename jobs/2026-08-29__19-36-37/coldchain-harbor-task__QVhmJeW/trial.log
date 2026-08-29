@@ -1,3 +1,0 @@
-Skipping image OS validation for hb__d3e9837c1cbca794a7b04ad4b082e4eb: docker inspect returned 1
-Collecting main service artifacts
-Trial coldchain-harbor-task__QVhmJeW failed: No reward file found at jobs/2026-08-29__19-36-37/coldchain-harbor-task__QVhmJeW/verifier/reward.txt or jobs/2026-08-29__19-36-37/coldchain-harbor-task__QVhmJeW/verifier/reward.json

@@ -1,9 +1,0 @@
-commodity_type,unit,base_price,hub_north_surcharge,hub_central_surcharge,hub_south_surcharge,notes
-DIESEL_BULK,USD_PER_GALLON,3.65,0.0,0.0,0.0,Ultra-Low Sulfur Diesel bulk fleet delivery contract
-RNG_BIO_CNG,USD_PER_DGE,2.7,0.35,0.15,0.2,Renewable Natural Gas index with regional pipeline transportation surcharges
-HYDROGEN_BULK,USD_PER_KG,11.8,0.0,0.0,0.0,Delivered high-purity gaseous H2 (350-bar tube trailer contract)
-TRACTIVE_EFFICIENCY_BEV,KWH_PER_MILE,1.85,0.0,0.0,0.0,Class 8 tractive road propulsion electrical consumption
-TRACTIVE_EFFICIENCY_CNG,MILES_PER_DGE,3.25,0.0,0.0,0.0,Class 8 spark-ignited natural gas fuel efficiency
-TRACTIVE_EFFICIENCY_DIESEL,MILES_PER_GALLON,7.2,0.0,0.0,0.0,Class 8 clean diesel tractive fuel efficiency
-TRU_DIESEL_BURN_RATE,GALLONS_PER_TRANSIT_HOUR,0.42,0.0,0.0,0.0,Diesel fuel consumed by hybrid TRU during non-solar road transit (0 gal on shore power / solar)
-TRACTIVE_EFFICIENCY_H2,MILES_PER_KG,7.4,0.0,0.0,0.0,Class 8 fuel cell hydrogen fuel economy
