@@ -1,0 +1,262 @@
+[
+  {
+    "item": 1,
+    "weight": 4,
+    "criterion": "The output file output/executive_recommendation.md exists and is non-empty.",
+    "category": "instruction_following",
+    "verification_type": "file_structure",
+    "grades_output_files": ["output/executive_recommendation.md"]
+  },
+  {
+    "item": 2,
+    "weight": 3,
+    "criterion": "The output file output/lifecycle_cost_analysis.csv exists and contains a header row.",
+    "category": "instruction_following",
+    "verification_type": "file_structure",
+    "grades_output_files": ["output/lifecycle_cost_analysis.csv"]
+  },
+  {
+    "item": 3,
+    "weight": 3,
+    "criterion": "The output file output/operational_risk_matrix.json exists and parses as valid JSON.",
+    "category": "instruction_following",
+    "verification_type": "file_structure",
+    "grades_output_files": ["output/operational_risk_matrix.json"]
+  },
+  {
+    "item": 4,
+    "weight": 2,
+    "criterion": "The file output/executive_recommendation.md contains the exact top-level heading '# Executive Summary & Strategic Recommendation'.",
+    "category": "instruction_following",
+    "verification_type": "text",
+    "grades_output_files": ["output/executive_recommendation.md"]
+  },
+  {
+    "item": 5,
+    "weight": 2,
+    "criterion": "The file output/executive_recommendation.md contains the exact section heading '## Selected Powertrain Architecture'.",
+    "category": "instruction_following",
+    "verification_type": "text",
+    "grades_output_files": ["output/executive_recommendation.md"]
+  },
+  {
+    "item": 6,
+    "weight": 2,
+    "criterion": "The file output/executive_recommendation.md contains the exact section heading '## 5-Year Lifecycle Financial Summary'.",
+    "category": "instruction_following",
+    "verification_type": "text",
+    "grades_output_files": ["output/executive_recommendation.md"]
+  },
+  {
+    "item": 7,
+    "weight": 2,
+    "criterion": "The file output/executive_recommendation.md contains the exact section heading '## Operational Feasibility & Cold-Chain Integrity Analysis'.",
+    "category": "instruction_following",
+    "verification_type": "text",
+    "grades_output_files": ["output/executive_recommendation.md"]
+  },
+  {
+    "item": 8,
+    "weight": 2,
+    "criterion": "The file output/executive_recommendation.md contains the exact section heading '## Rejection Justifications for Alternative Options'.",
+    "category": "instruction_following",
+    "verification_type": "text",
+    "grades_output_files": ["output/executive_recommendation.md"]
+  },
+  {
+    "item": 9,
+    "weight": 2,
+    "criterion": "The file output/executive_recommendation.md contains the exact section heading '## Hub-Specific Implementation & Risk Mitigation Plan'.",
+    "category": "instruction_following",
+    "verification_type": "text",
+    "grades_output_files": ["output/executive_recommendation.md"]
+  },
+  {
+    "item": 10,
+    "weight": 12,
+    "criterion": "The file output/executive_recommendation.md explicitly specifies 'DIESEL_HYB_TRU' as the selected powertrain architecture under the '## Selected Powertrain Architecture' section.",
+    "category": "recommend",
+    "verification_type": "text",
+    "is_recommendation_criterion": true,
+    "grades_output_files": ["output/executive_recommendation.md"]
+  },
+  {
+    "item": 11,
+    "weight": 12,
+    "criterion": "The file output/lifecycle_cost_analysis.csv contains a row with strategy_id 'DIESEL_HYB_TRU' where final_rank is 1.",
+    "category": "recommend",
+    "verification_type": "text",
+    "is_recommendation_criterion": true,
+    "grades_output_files": ["output/lifecycle_cost_analysis.csv"]
+  },
+  {
+    "item": 12,
+    "weight": 10,
+    "criterion": "The file output/operational_risk_matrix.json contains the key 'recommended_strategy' with the exact value 'DIESEL_HYB_TRU'.",
+    "category": "recommend",
+    "verification_type": "text",
+    "is_recommendation_criterion": true,
+    "grades_output_files": ["output/operational_risk_matrix.json"]
+  },
+  {
+    "item": 13,
+    "weight": 4,
+    "criterion": "The file output/executive_recommendation.md states that DIESEL_HYB_TRU achieves the lowest 5-year Total Cost of Logistics among all four candidate architectures.",
+    "category": "recommend",
+    "verification_type": "text",
+    "is_recommendation_criterion": true,
+    "grades_output_files": ["output/executive_recommendation.md"]
+  },
+  {
+    "item": 14,
+    "weight": 3,
+    "criterion": "The file output/lifecycle_cost_analysis.csv contains exactly 4 data rows corresponding to BEV_DEPOT, BIO_CNG, DIESEL_HYB_TRU, and H2_FCEV.",
+    "category": "instruction_following",
+    "verification_type": "text",
+    "grades_output_files": ["output/lifecycle_cost_analysis.csv"]
+  },
+  {
+    "item": 15,
+    "weight": 3,
+    "criterion": "The file output/lifecycle_cost_analysis.csv contains all 11 required column headers including strategy_id, net_vehicle_capex_musd, and total_tcol_musd.",
+    "category": "instruction_following",
+    "verification_type": "text",
+    "grades_output_files": ["output/lifecycle_cost_analysis.csv"]
+  },
+  {
+    "item": 16,
+    "weight": 3,
+    "criterion": "In output/lifecycle_cost_analysis.csv, the total_tcol_musd value for DIESEL_HYB_TRU is between 20.0 and 26.0 million USD.",
+    "category": "analyze",
+    "verification_type": "text",
+    "grades_output_files": ["output/lifecycle_cost_analysis.csv"]
+  },
+  {
+    "item": 17,
+    "weight": 3,
+    "criterion": "In output/lifecycle_cost_analysis.csv, the total_tcol_musd value for BIO_CNG is between 23.0 and 29.0 million USD.",
+    "category": "analyze",
+    "verification_type": "text",
+    "grades_output_files": ["output/lifecycle_cost_analysis.csv"]
+  },
+  {
+    "item": 18,
+    "weight": 3,
+    "criterion": "In output/lifecycle_cost_analysis.csv, the total_tcol_musd value for H2_FCEV is between 44.0 and 56.0 million USD.",
+    "category": "analyze",
+    "verification_type": "text",
+    "grades_output_files": ["output/lifecycle_cost_analysis.csv"]
+  },
+  {
+    "item": 19,
+    "weight": 3,
+    "criterion": "In output/lifecycle_cost_analysis.csv, the total_tcol_musd value for BEV_DEPOT is between 52.0 and 75.0 million USD.",
+    "category": "analyze",
+    "verification_type": "text",
+    "grades_output_files": ["output/lifecycle_cost_analysis.csv"]
+  },
+  {
+    "item": 20,
+    "weight": 3,
+    "criterion": "In output/lifecycle_cost_analysis.csv, for every row, total_tcol_musd equals the sum of its individual cost components within 0.15 million USD.",
+    "category": "synthesize",
+    "verification_type": "text",
+    "grades_output_files": ["output/lifecycle_cost_analysis.csv"]
+  },
+  {
+    "item": 21,
+    "weight": 3,
+    "criterion": "In output/lifecycle_cost_analysis.csv, the reported tcol_per_pallet_mile_usd for DIESEL_HYB_TRU is between 0.150 and 0.220 USD per pallet-mile.",
+    "category": "analyze",
+    "verification_type": "text",
+    "grades_output_files": ["output/lifecycle_cost_analysis.csv"]
+  },
+  {
+    "item": 22,
+    "weight": 2,
+    "criterion": "In output/lifecycle_cost_analysis.csv, the reported utility_demand_and_substation_musd for BEV_DEPOT is greater than or equal to 5.0 million USD.",
+    "category": "analyze",
+    "verification_type": "text",
+    "grades_output_files": ["output/lifecycle_cost_analysis.csv"]
+  },
+  {
+    "item": 23,
+    "weight": 2,
+    "criterion": "In output/lifecycle_cost_analysis.csv, the reported sla_and_pharma_penalties_musd for BEV_DEPOT is greater than or equal to 5.0 million USD.",
+    "category": "analyze",
+    "verification_type": "text",
+    "grades_output_files": ["output/lifecycle_cost_analysis.csv"]
+  },
+  {
+    "item": 24,
+    "weight": 2,
+    "criterion": "The file output/operational_risk_matrix.json contains the key 'fleet_size_total' with integer value 90 and 'planning_horizon_years' with integer value 5.",
+    "category": "instruction_following",
+    "verification_type": "text",
+    "grades_output_files": ["output/operational_risk_matrix.json"]
+  },
+  {
+    "item": 25,
+    "weight": 2,
+    "criterion": "The file output/operational_risk_matrix.json contains hub feasibility objects for HUB_NORTH, HUB_CENTRAL, and HUB_SOUTH under 'hub_feasibility'.",
+    "category": "instruction_following",
+    "verification_type": "text",
+    "grades_output_files": ["output/operational_risk_matrix.json"]
+  },
+  {
+    "item": 26,
+    "weight": 2,
+    "criterion": "In output/operational_risk_matrix.json, under hub_feasibility for HUB_NORTH, annual_clean_air_tolls_usd is reported as a non-zero value greater than 10000.0.",
+    "category": "analyze",
+    "verification_type": "text",
+    "grades_output_files": ["output/operational_risk_matrix.json"]
+  },
+  {
+    "item": 27,
+    "weight": 2,
+    "criterion": "In output/operational_risk_matrix.json, candidate_tcol_summary contains entries for BEV_DEPOT, BIO_CNG, DIESEL_HYB_TRU, and H2_FCEV.",
+    "category": "instruction_following",
+    "verification_type": "text",
+    "grades_output_files": ["output/operational_risk_matrix.json"]
+  },
+  {
+    "item": 28,
+    "weight": 2,
+    "criterion": "The file output/executive_recommendation.md explicitly provides rejection arguments for BEV_DEPOT under '## Rejection Justifications for Alternative Options'.",
+    "category": "synthesize",
+    "verification_type": "text",
+    "grades_output_files": ["output/executive_recommendation.md"]
+  },
+  {
+    "item": 29,
+    "weight": 2,
+    "criterion": "The file output/executive_recommendation.md explicitly provides rejection arguments for BIO_CNG under '## Rejection Justifications for Alternative Options'.",
+    "category": "synthesize",
+    "verification_type": "text",
+    "grades_output_files": ["output/executive_recommendation.md"]
+  },
+  {
+    "item": 30,
+    "weight": 2,
+    "criterion": "The file output/executive_recommendation.md explicitly provides rejection arguments for H2_FCEV under '## Rejection Justifications for Alternative Options'.",
+    "category": "synthesize",
+    "verification_type": "text",
+    "grades_output_files": ["output/executive_recommendation.md"]
+  },
+  {
+    "item": 31,
+    "weight": 2,
+    "criterion": "The file output/executive_recommendation.md mentions solar-PV and shore power standby under '## Operational Feasibility & Cold-Chain Integrity Analysis'.",
+    "category": "explore",
+    "verification_type": "text",
+    "grades_output_files": ["output/executive_recommendation.md"]
+  },
+  {
+    "item": 32,
+    "weight": 2,
+    "criterion": "The file output/executive_recommendation.md addresses municipal Low-Emission Zone tolls for Hub-North in '## Hub-Specific Implementation & Risk Mitigation Plan'.",
+    "category": "hypothesize",
+    "verification_type": "text",
+    "grades_output_files": ["output/executive_recommendation.md"]
+  }
+]

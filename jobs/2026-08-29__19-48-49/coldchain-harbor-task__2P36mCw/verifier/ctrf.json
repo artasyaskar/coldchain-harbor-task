@@ -1,0 +1,116 @@
+{
+  "report": {
+    "summary": {
+      "tests": 13,
+      "passed": 2,
+      "failed": 11,
+      "reward": 0.0
+    },
+    "tests": [
+      {
+        "name": "test_output_files_exist",
+        "status": "failed",
+        "raw_status": "failed",
+        "message": "Missing required output file: executive_recommendation.md",
+        "weight": 5,
+        "decision": false
+      },
+      {
+        "name": "test_csv_schema_and_row_count",
+        "status": "failed",
+        "raw_status": "failed",
+        "message": "lifecycle_cost_analysis.csv missing",
+        "weight": 5,
+        "decision": false
+      },
+      {
+        "name": "test_json_schema_validity",
+        "status": "failed",
+        "raw_status": "failed",
+        "message": "operational_risk_matrix.json missing",
+        "weight": 5,
+        "decision": false
+      },
+      {
+        "name": "test_md_required_headings",
+        "status": "failed",
+        "raw_status": "failed",
+        "message": "executive_recommendation.md missing",
+        "weight": 5,
+        "decision": false
+      },
+      {
+        "name": "test_md_selected_powertrain_architecture",
+        "status": "failed",
+        "raw_status": "failed",
+        "message": "executive_recommendation.md missing",
+        "weight": 15,
+        "decision": true
+      },
+      {
+        "name": "test_csv_rank_1_is_diesel_hybrid",
+        "status": "failed",
+        "raw_status": "failed",
+        "message": "lifecycle_cost_analysis.csv missing",
+        "weight": 15,
+        "decision": true
+      },
+      {
+        "name": "test_json_recommended_strategy",
+        "status": "failed",
+        "raw_status": "failed",
+        "message": "operational_risk_matrix.json missing",
+        "weight": 10,
+        "decision": true
+      },
+      {
+        "name": "test_tcol_numeric_reconciliation",
+        "status": "failed",
+        "raw_status": "failed",
+        "message": "lifecycle_cost_analysis.csv missing",
+        "weight": 10,
+        "decision": false
+      },
+      {
+        "name": "test_pallet_mile_metric_validity",
+        "status": "failed",
+        "raw_status": "failed",
+        "message": "lifecycle_cost_analysis.csv missing",
+        "weight": 10,
+        "decision": false
+      },
+      {
+        "name": "test_bev_grid_substation_finding",
+        "status": "failed",
+        "raw_status": "failed",
+        "message": "lifecycle_cost_analysis.csv missing",
+        "weight": 10,
+        "decision": false
+      },
+      {
+        "name": "test_sla_pharma_delay_penalty_finding",
+        "status": "failed",
+        "raw_status": "failed",
+        "message": "lifecycle_cost_analysis.csv missing",
+        "weight": 10,
+        "decision": false
+      },
+      {
+        "name": "test_penalty_unauthorized_strategy_tokens",
+        "status": "passed",
+        "raw_status": "passed",
+        "message": "File missing; no penalty charged",
+        "weight": -10,
+        "decision": false
+      },
+      {
+        "name": "test_penalty_substation_upgrade_omitted_for_bev",
+        "status": "passed",
+        "raw_status": "passed",
+        "message": "File missing; no penalty charged",
+        "weight": -10,
+        "decision": false
+      }
+    ]
+  }
+}

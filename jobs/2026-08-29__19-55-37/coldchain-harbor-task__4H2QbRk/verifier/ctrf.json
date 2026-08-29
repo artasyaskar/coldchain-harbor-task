@@ -1,0 +1,116 @@
+{
+  "report": {
+    "summary": {
+      "tests": 13,
+      "passed": 13,
+      "failed": 0,
+      "reward": 1.0
+    },
+    "tests": [
+      {
+        "name": "test_output_files_exist",
+        "status": "passed",
+        "raw_status": "passed",
+        "message": "",
+        "weight": 5,
+        "decision": false
+      },
+      {
+        "name": "test_csv_schema_and_row_count",
+        "status": "passed",
+        "raw_status": "passed",
+        "message": "",
+        "weight": 5,
+        "decision": false
+      },
+      {
+        "name": "test_json_schema_validity",
+        "status": "passed",
+        "raw_status": "passed",
+        "message": "",
+        "weight": 5,
+        "decision": false
+      },
+      {
+        "name": "test_md_required_headings",
+        "status": "passed",
+        "raw_status": "passed",
+        "message": "",
+        "weight": 5,
+        "decision": false
+      },
+      {
+        "name": "test_md_selected_powertrain_architecture",
+        "status": "passed",
+        "raw_status": "passed",
+        "message": "",
+        "weight": 15,
+        "decision": true
+      },
+      {
+        "name": "test_csv_rank_1_is_diesel_hybrid",
+        "status": "passed",
+        "raw_status": "passed",
+        "message": "",
+        "weight": 15,
+        "decision": true
+      },
+      {
+        "name": "test_json_recommended_strategy",
+        "status": "passed",
+        "raw_status": "passed",
+        "message": "",
+        "weight": 10,
+        "decision": true
+      },
+      {
+        "name": "test_tcol_numeric_reconciliation",
+        "status": "passed",
+        "raw_status": "passed",
+        "message": "",
+        "weight": 10,
+        "decision": false
+      },
+      {
+        "name": "test_pallet_mile_metric_validity",
+        "status": "passed",
+        "raw_status": "passed",
+        "message": "",
+        "weight": 10,
+        "decision": false
+      },
+      {
+        "name": "test_bev_grid_substation_finding",
+        "status": "passed",
+        "raw_status": "passed",
+        "message": "",
+        "weight": 10,
+        "decision": false
+      },
+      {
+        "name": "test_sla_pharma_delay_penalty_finding",
+        "status": "passed",
+        "raw_status": "passed",
+        "message": "",
+        "weight": 10,
+        "decision": false
+      },
+      {
+        "name": "test_penalty_unauthorized_strategy_tokens",
+        "status": "passed",
+        "raw_status": "passed",
+        "message": "No unauthorized tokens found (clean attempt)",
+        "weight": -10,
+        "decision": false
+      },
+      {
+        "name": "test_penalty_substation_upgrade_omitted_for_bev",
+        "status": "passed",
+        "raw_status": "passed",
+        "message": "BEV utility cost correctly identified as non-zero",
+        "weight": -10,
+        "decision": false
+      }
+    ]
+  }
+}
